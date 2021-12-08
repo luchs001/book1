@@ -28,6 +28,14 @@ html,body {
 	transform: translate(-50%, -50%);
 
 }
+.apple {
+	max-width:25%;
+    height:auto;
+	position: absolute;
+	top: 650px;
+	left: 30opx;
+	filter: drop-shadow(8px 8px 10px gray);
+}
 .title {
 	font-family: usual, sans-serif;
 	font-weight: 600;
@@ -63,19 +71,43 @@ html,body {
 	color: #333333;
 	position: absolute;
 	top: 120px;
-  left: 310px;
+	left: 310px;
+}
+
+.title:hover{
+	animation: spin 4s infinite; 
+}
+.subtitle:hover{
+	position: relative;
+	animation: rise 4s;
+	animation-fill-mode: forwards;
+
+}
+
+
+@keyframes spin{
+	0% { transform: rotate(0deg); } 
+	25% { transform: rotate(180deg); } 
+	50% { transform: rotate(360deg); }
+	75% { transform: rotate(360deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes rise {
+ 0%  {top: 90px; }
+ 100% {top: -200px; }
 }
 
 
 /* Animation Keyframes */
 @keyframes t_move {
- 0%  { color: black;top: -300px;  left: 34px}
+ 0%  {color: black; top: -300px;  left: 34px;}
  10% {transform: rotate(-5deg);}
  20% {transform: rotate(-10deg);}
  30% {transform: rotate(-15deg);}
  40% {transform: rotate(-25deg);}
  50% {transform: rotate(-35deg);}
- 52% {transform: rotate(-45deg);}
+ 55% {transform: rotate(-45deg);}
  60% {transform: rotate(-50deg);}
  65% {transform: rotate(-55deg);}
  75% {transform: rotate(-60deg);}
@@ -93,13 +125,13 @@ html,body {
 }
 
 @keyframes y_move {
- 0%  { color: black;top: -300px;  left: 300px}
+ 0%  { color: black; top: -300px;  left: 300px;}
  50% {transform: rotate(35deg);}
- 52% {transform: rotate(45deg);}
- 60% {transform: rotate(55deg);}
- 65% {transform: rotate(65deg);}
- 75% {transform: rotate(75deg);}
- 85% {transform: rotate(85deg);}
+ 55% {transform: rotate(45deg);}
+ 65% {transform: rotate(55deg);}
+ 75% {transform: rotate(65deg);}
+ 85% {transform: rotate(75deg);}
+ 95% {transform: rotate(85deg);}
  100% {top: 190px; left: 285px; transform: rotate(70deg);}
 
 }
@@ -113,13 +145,14 @@ html,body {
 }
 
 @keyframes i_move {
- 0%  { color: black;top: -300px;  left: 300px}
- 50% {transform: rotate(35deg);}
- 52% {transform: rotate(45deg);}
- 60% {transform: rotate(55deg);}
- 65% {transform: rotate(65deg);}
- 75% {transform: rotate(75deg);}
- 85% {transform: rotate(85deg);}
+ 0%  { color: black; top: -300px;  left: 300px;}
+ 30% {transform: rotate (10deg);}
+ 40% {transform: rotate(1deg);}
+ 50% {transform: rotate(20deg);}
+ 60% {transform: rotate(25deg);}
+ 70% {transform: rotate(30deg);}
+ 80% {transform: rotate(35deg);}
+ 90% {transform: rotate(45deg);}
  100% {top: 130px; left: 278px; transform: rotate(51deg);}
 
 }
@@ -133,13 +166,13 @@ html,body {
 }
 
 @keyframes v_move {
- 0%  { color: black;top: -300px;  left: 300px}
- 50% {transform: rotate(35deg);}
- 52% {transform: rotate(45deg);}
- 60% {transform: rotate(55deg);}
- 65% {transform: rotate(65deg);}
- 75% {transform: rotate(75deg);}
- 85% {transform: rotate(85deg);}
+ 0%  { color: black; top: -300px;  left: 300px;}
+ 40% {transform: rotate(35deg);}
+ 50% {transform: rotate(45deg);}
+ 60% {transform: rotate(47deg);}
+ 65% {transform: rotate(46deg);}
+ 75% {transform: rotate(45deg);}
+ 85% {transform: rotate(40deg);}
  100% {top: 106px; left: 158px; transform: rotate(36deg);}
 
 }
@@ -153,8 +186,9 @@ html,body {
 }
 
 @keyframes g_move {
- 0%  { color: black; top: -300px;  left: 80px}
- 50% {transform: rotate(35deg);}
+ 0%  { color: black; top: -300px;  left: 80px;}
+ 30% {transform: rotate(10deg);}
+ 40% {transform: rotate(25deg);}
  52% {transform: rotate(45deg);}
  60% {transform: rotate(55deg);}
  65% {transform: rotate(65deg);}
@@ -172,7 +206,7 @@ html,body {
 
 }
 @keyframes r_move {
- 0%  { color: black; top: -300px;  left: 97px}
+ 0%  { color: black; top: -300px;  left: 97px;}
  50% {transform: rotate(4deg);}
  52% {transform: rotate(5deg);}
  60% {transform: rotate(6deg);}
@@ -191,7 +225,7 @@ html,body {
 
 }
 @keyframes a_move {
- 0%  { color: black; top: -300px;  left: 80px}
+ 0%  {color: black; top: -300px; left: 80px;}
  50% {transform: rotate(35deg);}
  52% {transform: rotate(45deg);}
  60% {transform: rotate(55deg);}
@@ -206,6 +240,48 @@ html,body {
  font-weight:900;
  position: absolute;
  animation: a_move 5s linear;
+ animation-fill-mode: forwards;
+
+}
+@keyframes o_move {
+ 0%  {color: black; top: -250px;  left: 34px;}
+ 10% {transform: rotate(-1deg);}
+ 20% {transform: rotate(-2deg);}
+ 30% {transform: rotate(-3deg);}
+ 40% {transform: rotate(-4deg);}
+ 50% {transform: rotate(-4deg);}
+ 52% {transform: rotate(-5deg);}
+ 60% {transform: rotate(-7deg);}
+ 65% {transform: rotate(-8deg);}
+ 75% {transform: rotate(-9deg);}
+ 85% {transform: rotate(-10deg);}
+ 100% {top: -103px; left: 129px; transform: rotate(-18deg);}
+
+}
+.lettero  {
+ font-size: 170pt;
+ font-weight:900;
+ position: absolute;
+ animation: o_move 5s linear;
+ animation-fill-mode: forwards;
+
+}
+@keyframes n_move {
+ 0%  { color: black; top: -250px;  left: 97px;}
+ 50% {transform: rotate(4deg);}
+ 52% {transform: rotate(5deg);}
+ 60% {transform: rotate(6deg);}
+ 52% {transform: rotate(8deg);}
+ 75% {transform: rotate(9deg);}
+ 85% {transform: rotate(10deg);}
+ 100% {top: -92px; left: 270px; transform: rotate(14deg);}
+
+}
+.lettern  {
+ font-size: 170pt;
+ font-weight:900;
+ position: absolute;
+ animation: n_move 5s linear;
  animation-fill-mode: forwards;
 
 }
